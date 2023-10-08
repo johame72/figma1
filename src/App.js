@@ -3,28 +3,40 @@ import "./App.css";
 
 const App = () => {
   const [showGrid, setShowGrid] = useState(false);
+  const gridDivisions = 10;  // Number of squares in one dimension
+
+  const spacing = window.innerWidth / gridDivisions;
 
   return (
     <div className="frame">
       {/* Toggle Grid Button */}
-      <button onClick={() => setShowGrid(!showGrid)}>Toggle Grid</button>
+      <button 
+          onClick={() => setShowGrid(!showGrid)} 
+          aria-label="Toggle measurement grid"
+      >
+          Toggle Grid
+      </button>
 
       {/* Conditional rendering of the grid */}
       {showGrid && (
         <div className="measurement-grid">
-          {/* Render vertical lines */}
-          {Array(10).fill().map((_, index) => (
-            <div key={index} className="vertical-grid-line" style={{ left: `${index * 10}%` }} />
+          {/* Render vertical lines and their annotations */}
+          {Array(gridDivisions + 1).fill().map((_, index) => (
+            <React.Fragment key={index}>
+              <div className="vertical-grid-line" style={{ left: `${index * spacing}px` }} />
+              {index !== 0 && <div className="vertical-annotation-top" style={{ left: `${index * spacing}px` }}>{index * spacing}</div>}
+              {index !== 0 && <div className="vertical-annotation-bottom" style={{ left: `${index * spacing}px` }}>{index * spacing}</div>}
+            </React.Fragment>
           ))}
 
-          {/* Render horizontal lines */}
-          {Array(10).fill().map((_, index) => (
-            <div key={index} className="horizontal-grid-line" style={{ top: `${index * 10}%` }} />
+          {/* Render horizontal lines and their annotations */}
+          {Array(gridDivisions + 1).fill().map((_, index) => (
+            <React.Fragment key={index}>
+              <div className="horizontal-grid-line" style={{ top: `${index * spacing}px` }} />
+              {index !== 0 && <div className="horizontal-annotation-left" style={{ top: `${index * spacing}px` }}>{index * spacing}</div>}
+              {index !== 0 && <div className="horizontal-annotation-right" style={{ top: `${index * spacing}px` }}>{index * spacing}</div>}
+            </React.Fragment>
           ))}
-
-          {/* X and Y axis measurements */}
-          <div className="x-axis">X</div>
-          <div className="y-axis">Y</div>
         </div>
       )}
 

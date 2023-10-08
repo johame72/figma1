@@ -303,3 +303,31 @@ button {
   left: 10px;
   transform: translateY(-50%);
 }
+
+.vertical-annotation-top {
+  position: absolute;
+  top: 0;
+  transform: translateY(-100%);
+  font-size: 12px;
+}
+
+.vertical-annotation-bottom {
+  position: absolute;
+  bottom: 0;
+  transform: translateY(100%);
+  font-size: 12px;
+}
+
+.horizontal-annotation-left {
+  position: absolute;
+  left: 0;
+  transform: translateX(-100%);
+  font-size: 12px;
+}
+
+.horizontal-annotation-right {
+  position: absolute;
+  right: 0;
+  transform: translateX(100%);
+  font-size: 12px;
+}
