@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 
-export const App = () => {
+const App = () => {
   return (
     <div className="frame">
       <div className="overlap">
@@ -32,3 +32,5 @@ export const App = () => {
     </div>
   );
 };
+
+export default App;
