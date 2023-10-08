@@ -221,3 +221,34 @@
   top: 453px;
   width: 1394px;
 }
+
+.measurement-grid {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000; /* Ensure grid appears above everything else */
+  display: grid;
+  grid-template-columns: repeat(12, 1fr); /* 12 columns grid */
+  grid-gap: 1rem;
+  pointer-events: none; /* Ensure grid doesn't interfere with clicks */
+}
+
+.measurement-grid::before,
+.measurement-grid::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 1px;
+  height: 100%;
+  background-color: red;
+}
+
+.measurement-grid::before {
+  left: 50%; /* Vertical line at the center */
+}
+
+.measurement-grid::after {
+  right: 0; /* Vertical line at the right edge */
+}
