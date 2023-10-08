@@ -233,6 +233,8 @@
   grid-template-columns: repeat(12, 1fr); /* 12 columns grid */
   grid-gap: 1rem;
   pointer-events: none; /* Ensure grid doesn't interfere with clicks */
+  width: 100%;
+  height: 100%;
 }
 
 .measurement-grid::before,
@@ -258,14 +260,6 @@ button {
   top: 10px;
   left: 10px;
   z-index: 10;
-}
-
-.measurement-grid {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
 }
 
 .vertical-grid-line {
@@ -304,30 +298,12 @@ button {
   transform: translateY(-50%);
 }
 
-.vertical-annotation-top {
-  position: absolute;
-  top: 0;
-  transform: translateY(-100%);
-  font-size: 12px;
+.vertical-annotation-top, .horizontal-annotation-left {
+  color: black; /* Ensure text is readable. Adjust as needed */
+  z-index: 1010; /* Ensure it's above the grid but below any potential UI components */
 }
 
-.vertical-annotation-bottom {
-  position: absolute;
-  bottom: 0;
-  transform: translateY(100%);
-  font-size: 12px;
-}
-
-.horizontal-annotation-left {
-  position: absolute;
-  left: 0;
-  transform: translateX(-100%);
-  font-size: 12px;
-}
-
-.horizontal-annotation-right {
-  position: absolute;
-  right: 0;
-  transform: translateX(100%);
-  font-size: 12px;
+.vertical-annotation-bottom, .horizontal-annotation-right {
+  color: black; /* Ensure text is readable. Adjust as needed */
+  z-index: 1010; /* Ensure it's above the grid but below any potential UI components */
 }
