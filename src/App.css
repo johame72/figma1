@@ -1,38 +1,223 @@
-.App {
+.frame {
+  background-color: #ffffff;
+  height: 1328px;
+  overflow: hidden;
+  position: relative;
+  width: 2275px;
+}
+
+.frame .overlap {
+  background-color: #7be692;
+  height: 94px;
+  left: 0;
+  position: absolute;
+  top: 30px;
+  width: 2235px;
+}
+
+.frame .div {
+  background-color: #2c2929;
+  height: 46px;
+  left: 2073px;
+  position: absolute;
+  top: 24px;
+  width: 138px;
+}
+
+.frame .rectangle-2 {
+  background-color: #2c2929;
+  height: 46px;
+  left: 1905px;
+  position: absolute;
+  top: 24px;
+  width: 138px;
+}
+
+.frame .rectangle-3 {
+  background-color: #2c2929;
+  height: 46px;
+  left: 182px;
+  position: absolute;
+  top: 24px;
+  width: 138px;
+}
+
+.frame .rectangle-4 {
+  background-color: #2c2929;
+  height: 46px;
+  left: 17px;
+  position: absolute;
+  top: 24px;
+  width: 138px;
+}
+
+.frame .text-wrapper {
+  color: #000000;
+  font-family: "Inter-Regular", Helvetica;
+  font-size: 48px;
+  font-weight: 400;
+  left: 858px;
+  letter-spacing: 0;
+  line-height: normal;
+  position: absolute;
   text-align: center;
+  text-shadow: 0px 4px 4px #00000040;
+  top: 15px;
+  width: 343px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.frame .overlap-group {
+  height: 1177px;
+  left: 0;
+  position: absolute;
+  top: 143px;
+  width: 2245px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.frame .overlap-2 {
+  height: 290px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2240px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.frame .overlap-group-2 {
+  height: 278px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 2240px;
 }
 
-.App-link {
-  color: #61dafb;
+.frame .rectangle-5 {
+  background-color: #d9d9d9;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 220px;
+  left: 0;
+  mix-blend-mode: darken;
+  position: absolute;
+  top: 0;
+  width: 2235px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.frame .rectangle-6 {
+  background-color: #cd97e7;
+  border: 10px solid;
+  border-color: #000000;
+  border-radius: 20px;
+  height: 61px;
+  left: 1786px;
+  position: absolute;
+  top: 217px;
+  width: 454px;
+}
+
+.frame .rectangle-7 {
+  background-color: #2c2929;
+  border-radius: 25px;
+  height: 46px;
+  left: 17px;
+  position: absolute;
+  top: 15px;
+  width: 138px;
+}
+
+.frame .rectangle-8 {
+  background-color: #2c2929;
+  border-radius: 10px;
+  height: 46px;
+  left: 2073px;
+  position: absolute;
+  top: 15px;
+  width: 138px;
+}
+
+.frame .rectangle-9 {
+  background-color: #2c2929;
+  border-radius: 7px;
+  height: 46px;
+  left: 2073px;
+  position: absolute;
+  top: 159px;
+  width: 138px;
+}
+
+.frame .rectangle-10 {
+  background-color: #2c2929;
+  border-radius: 5px;
+  height: 46px;
+  left: 2073px;
+  position: absolute;
+  top: 87px;
+  width: 138px;
+}
+
+.frame .rectangle-11 {
+  background-color: #2c2929;
+  border-radius: 15px;
+  height: 46px;
+  left: 17px;
+  position: absolute;
+  top: 159px;
+  width: 138px;
+}
+
+.frame .rectangle-12 {
+  background-color: #2c2929;
+  border-radius: 30px;
+  height: 46px;
+  left: 17px;
+  position: absolute;
+  top: 87px;
+  width: 138px;
+}
+
+.frame .rectangle-13 {
+  background-color: #a48c8c;
+  border-radius: 20px;
+  height: 51px;
+  left: 361px;
+  position: absolute;
+  top: 239px;
+  width: 1394px;
+}
+
+.frame .rectangle-14 {
+  background-color: #9fccec;
+  height: 51px;
+  left: 0;
+  position: absolute;
+  top: 239px;
+  width: 343px;
+}
+
+.frame .rectangle-15 {
+  background-color: #c35eac;
+  border: 10px solid;
+  border-color: #000000;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 897px;
+  left: 1781px;
+  position: absolute;
+  top: 280px;
+  width: 464px;
+}
+
+.frame .rectangle-instance {
+  left: 0 !important;
+  position: absolute !important;
+  top: 453px !important;
+}
+
+.frame .rectangle-16 {
+  background-color: #d9d9d9;
+  border-radius: 20px;
+  box-shadow: 0px 4px 4px #00000040;
+  height: 877px;
+  left: 361px;
+  position: absolute;
+  top: 453px;
+  width: 1394px;
 }
